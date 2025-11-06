@@ -1,0 +1,182 @@
+{
+    "QMainWindow":[
+        {
+            "tittle": "Gestion de Courrier (Utilisateur)",
+            "frameless": true,
+            "transluscentBg": true,
+            "sizeGrip": "sizeGrip",
+            "navigation":[
+                {
+                    "minimize": "minimizeBtn",
+                    "close": "closeBtn",
+                    "restore":[
+                        {
+                            "buttonName": "restoreBtn",
+                            "normalIcon":  ":/icons/icons/square.svg",
+                            "maximizedIcon": ":/icons/icons/copy.svg"
+                        }
+                    ],
+                    "moveWindow": "headerConatainer",
+                    "tittleBar": "headerConatainer"
+                }
+            ]
+        }
+    ],
+    "QCustomSlideMenu": [
+        {
+        "name": "LeftMenuContainer",
+        "defaultSize": [{
+            "width": 42,
+            "height": "parent"
+        }],
+        "collapsedSize": [{
+            "width": 42,
+            "height": "parent"
+        }],
+        "expandedSize": [{
+            "width": 190,
+            "height": "parent"
+        }],
+        "toggleButton": [{
+            "buttonName": "MenuBtn",
+            "icons": [{
+                "whenMenuIsCollapsed": ":/icons/icons/align-justify.svg",
+                "whenMenuIsExpanded": ":/icons/icons/chevron-left.svg"
+            }]
+        }],
+        "menuTransitionAnimation": [{
+            "animationDuration": 500,
+            "animationEasingCurve": "Linear",
+            "whenCollapsing": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+        }]
+    },
+    {
+        "name": "rigthMenuContainer",
+        "defaultSize": [{
+            "width": 0,
+            "height": "auto"
+        }],
+        "collapsedSize": [{
+            "width": 0,
+            "height": "auto"
+        }],
+        "expandedSize": [{
+            "width": 300,
+            "height": "auto"
+        }],
+        "menuTransitionAnimation": [{
+            "animationDuration": 500,
+            "animationEasingCurve": "Linear",
+            "whenCollapsing": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+        }]
+    },
+    {
+        "name": "CenterMenuContainer",
+        "defaultSize": [{
+            "width": 0,
+            "height": "parent"
+        }],
+        "collapsedSize": [{
+            "width": 0,
+            "height": "parent"
+        }],
+        "expandedSize": [{
+            "width": 200,
+            "height": "parent"
+        }],
+        "menuTransitionAnimation": [{
+            "animationDuration": 500,
+            "animationEasingCurve": "Linear",
+            "whenCollapsing": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+        }]
+    }
+],
+"QStackedWidget":[
+    {
+        "name": "MainPage",
+        "navigation":[
+                    {
+                        "navigationButtons": [
+                    {
+                        "HomeBtn": "page_8",
+                        "DVCBtn": "page_9",
+                        "RTVSBtn": "page_10",
+                        "pushButton_7": "page_5",
+                        "pushButton_8": "page_6"
+                    }
+                ]
+             }
+        ]
+     },
+     {
+        "name": "CenterMenuPages",
+        "navigation":[
+                    {
+                        "navigationButtons": [
+                    {
+                        "SettingsBtn": "page_3",
+                        "AboutBtn": "page_4",
+                        "pushButton_9": "page"
+                    }
+                ]
+             }
+        ]
+     },
+     {
+        "name": "FormularPages",
+        "navigation":[
+                    {
+                        "navigationButtons": [
+                    {
+                        "EnregistrerRTVS_2": "formRTVS",
+                        "EnregistrementDVC_2": "page_2",
+                        "EnregistrementDVC_3": "page_7",
+                        "EnregistrementDVC_4": "page_11"
+                    }
+                ]
+             }
+        ]
+     }
+],
+"QPushButtonGroup": [
+    {
+            "Buttons":[
+                "HomeBtn",
+                "DVCBtn",
+                "RTVSBtn",
+                "AboutBtn",
+                "SettingsBtn",
+                "pushButton_7",
+                "pushButton_8",
+                "pushButton_9"
+            ],
+            "Style": [
+                {
+                "Active": "background-color: #B8AC32;",
+                "NotActive": "background-color: transparent;"
+            }
+        ]
+    },
+    {
+        "Buttons":[
+            "EnregistrementDVC_2",
+            "EnregistrerRTVS_2"
+        ],
+        "Style": [
+            {
+            "Active": "background-color: #B8AC32;",
+            "NotActive": "background-color: transparent;"
+        }
+    ]
+}
+]
+}

@@ -1,0 +1,170 @@
+{
+    "QMainWindow":[
+        {
+            "tittle": "Gestion de Courrier (Utilisateur)",
+            "frameless": true,
+            "transluscentBg": true,
+            "sizeGrip": "sizeGrip",
+            "navigation":[
+                {
+                    "minimize": "minimizeBtn",
+                    "close": "closeBtn",
+                    "restore":[
+                        {
+                            "buttonName": "restoreBtn",
+                            "normalIcon":  ":/icons/icons/square.svg",
+                            "maximizedIcon": ":/icons/icons/copy.svg"
+                        }
+                    ],
+                    "moveWindow": "headerConatainer",
+                    "tittleBar": "headerConatainer"
+                }
+            ]
+        }
+    ],
+    "QCustomSlideMenu": [
+        {
+        "name": "LeftMenuContainer",
+        "defaultSize": [{
+            "width": 42,
+            "height": "parent"
+        }],
+        "collapsedSize": [{
+            "width": 42,
+            "height": "parent"
+        }],
+        "expandedSize": [{
+            "width": 150,
+            "height": "parent"
+        }],
+        "toggleButton": [{
+            "buttonName": "MenuBtn",
+            "icons": [{
+                "whenMenuIsCollapsed": ":/icons/icons/align-justify.svg",
+                "whenMenuIsExpanded": ":/icons/icons/chevron-left.svg"
+            }]
+        }],
+        "menuTransitionAnimation": [{
+            "animationDuration": 500,
+            "animationEasingCurve": "Linear",
+            "whenCollapsing": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+        }]
+    },
+    {
+        "name": "rigthMenuContainer",
+        "defaultSize": [{
+            "width": 0,
+            "height": "auto"
+        }],
+        "collapsedSize": [{
+            "width": 0,
+            "height": "auto"
+        }],
+        "expandedSize": [{
+            "width": 400,
+            "height": "auto"
+        }],
+        "menuTransitionAnimation": [{
+            "animationDuration": 500,
+            "animationEasingCurve": "Linear",
+            "whenCollapsing": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+        }]
+    },
+    {
+        "name": "CenterMenuContainer",
+        "defaultSize": [{
+            "width": 0,
+            "height": "parent"
+        }],
+        "collapsedSize": [{
+            "width": 0,
+            "height": "parent"
+        }],
+        "expandedSize": [{
+            "width": 520,
+            "height": "parent"
+        }],
+        "menuTransitionAnimation": [{
+            "animationDuration": 500,
+            "animationEasingCurve": "Linear",
+            "whenCollapsing": [{
+                "animationDuration": 500,
+                "animationEasingCurve": "Linear"
+            }]
+        }]
+    }
+],
+"QStackedWidget":[
+    {
+        "name": "MainPage",
+        "navigation":[
+                    {
+                        "navigationButtons": [
+                    {
+                        "HomeBtn": "page_8",
+                        "DVCBtn": "page_9"
+                    }
+                ]
+             }
+        ]
+     },
+     {
+        "name": "CenterMenuPages",
+        "navigation":[
+                    {
+                        "navigationButtons": [
+                    {
+                        "SettingsBtn": "page_3",
+                        "AboutBtn": "page_4"
+                    }
+                ]
+             }
+        ]
+     },
+     {
+        "name": "FormularPages",
+        "navigation":[
+                    {
+                        "navigationButtons": [
+                    {
+                        "EnregistrementDVC_2": "page_2"
+                    }
+                ]
+             }
+        ]
+     }
+],
+"QPushButtonGroup": [
+    {
+            "Buttons":[
+                "HomeBtn",
+                "DVCBtn",
+                "AboutBtn",
+                "SettingsBtn"
+            ],
+            "Style": [
+                {
+                "Active": "background-color: #1f232a;",
+                "NotActive": "background-color: transparent;"
+            }
+        ]
+    },
+    {
+        "Buttons":[
+            "EnregistrementDVC_2"
+        ],
+        "Style": [
+            {
+            "Active": "background-color: #B8AC32;",
+            "NotActive": "background-color: transparent;"
+        }
+    ]
+}
+]
+}
